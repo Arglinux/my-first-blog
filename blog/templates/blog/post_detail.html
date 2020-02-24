@@ -25,8 +25,29 @@
         <p>{{ post.text|safe }}</p>
         </div>
     </div>
+
+    <div class="container p-4">
+        <div class="jumbotron">
+            <div class="ComentariosText">
+            <p>Comentarios:</p>
+        </div>
+    <hr>
+    <p></p><a class="btn btn-primary btn-lg" href="{% url 'add_comment_to_post' pk=post.pk %}">Añadir un comentario</a></p>
+{% for comment in post.comments.all %}
+{% if user.is_authenticated or comment.approved_comment %}
+    <div class="comment">
+        <div class="date">
+            {{ comment.created_date }}
+        {% if not comment.approved_comment %}
+                <a class="btn btn-primary btn-lg" href="{% url 'comment_remove' pk=comment.pk %}">Eliminar</a>
+                <a class="btn btn-primary btn-lg" href="{% url 'comment_approve' pk=comment.pk %}">Aprobar</a>
+            {% endif %}
+        </div>
+        <strong>{{ comment.author }}</strong>
+        <p>{{ comment.text|linebreaks }}</p>
+    </div>
+    {% endif %}
+{% empty %}
+    <p>Todavía no hay comentarios. Comenta algo...</p></div></div>
+{% endfor %}
 {% endblock %}
-
-
-<! --button type="submit" class="save btn btn-primary btn-lg">Guardar</button> -->
-
