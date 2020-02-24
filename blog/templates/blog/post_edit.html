@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1 class="javier-display-4">Redactar</h1>
+    <p></p>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+			<button type="submit" class="save btn btn-primary btn-lg">Guardar</button>
+    </form>
+{% endblock %}

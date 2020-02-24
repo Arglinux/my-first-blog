@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+{% for post in posts %}
+	<div class="post">
+		<div class="date">
+			<! --{{ post.published_date }}-->
+			<! -- MOSTRAR FECHA DE PUBLICACIÓN-->
+		</div>
+		<h2><a href="{% url 'post_detail' pk=post.pk %}">{{post.title }}</a></h2>
+	</div>
+{% endfor %}
+{% endblock %}

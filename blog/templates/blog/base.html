@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Javier Blog!</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Monserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans|Raleway&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+body {
+background: #00d2ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.javier-display-4 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 35px;
+}
+
+.javier-lead {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
+.navbar-brand {
+	font-size: 35px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.nav-link {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.date {
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+.save {
+	float: right;
+}
+
+.post-form textarea, .post-form input {
+	width; 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+	color: #FFFFFF;
+	float: right;
+	font-size: 26px;
+	margin-right: 20px;
+}
+
+.post {
+	margin-bottom: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+.post h2 a, .post h2 a:visited {
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.post-text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
+.post-form {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
+.jumbotron {
+	background: #FFFFFF;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">Javier Blog!</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+		{% if user.is_authenticated %}
+        <a class="nav-link" href="/admin">Administrar</a>
+		{% endif %}
+	  </li>
+	  <li class="nav-item">
+		{% if user.is_authenticated %}
+        <a class="nav-link" href="{% url 'post_new' %}">Redactar</a>
+		{% endif %}
+      </li>
+	  <li class="nav-item">
+		{% if user.is_authenticated %}
+        <a class="nav-link" href="{% url 'post_draft_list' %}">Borradores</a>
+		{% endif %}
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'about' %}">Acerca de</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</div>
+<div class="container p-4">
+<div class="jumbotron">
+	{% block content %}
+	{% endblock %}
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
