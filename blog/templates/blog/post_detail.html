@@ -4,7 +4,7 @@
     <div class="post">
         {% if post.published_date %}
             <div class="date">
-                <! --{{ post.published_date|date:'d-m-Y' }}-->
+                {{ post.published_date|date:'d-m-Y' }}
                 <! -- MOSTRAR FECHA DE PUBLICACIÓN-->
             </div>
             <div align="right">
@@ -19,11 +19,11 @@
     <a class="btn btn-primary btn-lg" href="{% url 'post_remove' pk=post.pk %}">Eliminar</a>
         {% endif %}
     </div>    </div>
-
+    <div class="post">
         <h2>{{ post.title }}</h2>
         <div class="post-text">
         <p>{{ post.text|safe }}</p>
-        </div>
+        </div></div>
     </div>
 
     <div class="container p-4">

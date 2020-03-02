@@ -13,10 +13,22 @@
 
 <style type="text/css">
 
+/*
 body {
 background: #00d2ff;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*}*/
+
+body {
+	background: #FFF;
+}
+
+.post-text img {
+	display:block;
+	margin:auto;
+	width: 50%;
+	height: auto;
 }
 
 .javier-display-4 {
@@ -30,8 +42,15 @@ background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, F
 }
 
 .navbar-brand {
+	padding-left: 10px;
+	font-weight: bold;
 	font-size: 35px;
 	font-family: 'Open Sans', sans-serif;
+}
+
+
+.bg-white {
+	background: #FFF;
 }
 
 .nav-link {
@@ -63,14 +82,26 @@ background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, F
 .post {
 	margin-bottom: 20px;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
+	font-size: 30px;
 }
 
 .post h2 a, .post h2 a:visited {
+	color: #BLUE;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	/*text-transform: uppercase;*/
+}
+
+.post h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+}
+
+.post h2 a:hover {
 	color: #000000;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
-	text-transform: uppercase;
+	font-size: 30px;
+	/*text-transform: uppercase;*/
 }
 
 .post-text {
@@ -99,7 +130,7 @@ background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, F
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
   <a class="navbar-brand" href="/">Javier Blog!</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -131,12 +162,17 @@ background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, F
   </div>
 </nav>
 
+<hr>
+
 </div>
 <div class="container p-4">
-<div class="jumbotron">
+
+	<!--JUMBOTRON-->
+<!--<div class="jumbotron">-->
 	{% block content %}
 	{% endblock %}
-</div>
+<!--</div>-->
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
