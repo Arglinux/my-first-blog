@@ -122,7 +122,7 @@ USE_TZ = True
 
 ##STATIC_URL = '/static/'
 STATIC_URL = "/home/Arglinux/arglinux.pythonanywhere.com/static/"
-STATIC_ROOT = "/home/Arglinux/arglinux.pythonanywhere.com/static/"
+##STATIC_ROOT = "/home/Arglinux/arglinux.pythonanywhere.com/static/"
 ##STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
