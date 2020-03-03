@@ -120,10 +120,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images).
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_URL = '/static/'
-##STATIC_URL = "/home/Arglinux/arglinux.pythonanywhere.com/static/"
-##STATIC_ROOT = "/home/Arglinux/arglinux.pythonanywhere.com/static/"
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATIC_URL = '/static/'
+STATIC_URL = "/home/Arglinux/arglinux.pythonanywhere.com/static/"
+STATIC_ROOT = "/home/Arglinux/arglinux.pythonanywhere.com/static/"
+
+STATICFILES_FINDERS = [
+     "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",]
+
 
 MEDIA_URL = '/home/Arglinux/arglinux.pythonanywhere.com/media/'
 CKEDITOR_UPLOAD_PATH = 'uploads'
