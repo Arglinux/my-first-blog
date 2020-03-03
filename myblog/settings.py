@@ -131,5 +131,5 @@ STATIC_ROOT = (os.path.join(SITE_ROOT, 'static_files/'))
 #)
 
 
-MEDIA_URL = '/media/'
+MEDIA_URL = '/static/'
 CKEDITOR_UPLOAD_PATH = 'uploads'
