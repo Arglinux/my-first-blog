@@ -125,5 +125,5 @@ STATIC_URL = "/home/Arglinux/arglinux.pythonanywhere.com/static/"
 ##STATIC_ROOT = "/home/Arglinux/arglinux.pythonanywhere.com/static/"
 ##STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-MEDIA_URL = '/media/'
+MEDIA_URL = '/home/Arglinux/arglinux.pythonanywhere.com/media/'
 CKEDITOR_UPLOAD_PATH = 'uploads'
