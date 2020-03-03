@@ -1,0 +1,132 @@
+/*
+body {
+background: #00d2ff;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*}*/
+
+body {
+	background: #FFF;
+}
+
+.imgRedonda {
+
+    border-radius:150px;
+}
+
+.post-text img {
+	display:block;
+	margin:auto;
+	width: 50%;
+	height: auto;
+}
+
+.about-title {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.javier-display-4 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 35px;
+}
+
+.javier-lead {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
+.navbar-brand {
+	padding-left: 5px;
+	padding-bottom: 0px;
+	font-weight: bold;
+	font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+	padding-bottom: 0px;
+	padding-top: 15px;
+}
+
+.bg-white {
+	background: #FFF;
+}
+
+.nav-link {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.date {
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+.save {
+	float: right;
+}
+
+.post-form textarea, .post-form input {
+	width; 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+	color: #FFFFFF;
+	float: right;
+	font-size: 26px;
+	margin-right: 20px;
+}
+
+.post {
+	margin-bottom: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 28px;
+}
+
+.post h2 a, .post h2 a:visited {
+	color: #BLUE;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 28px;
+	/*text-transform: uppercase;*/
+}
+
+.post h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 28px;
+}
+
+.post-detail h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 28px;
+	font-weight: bolder;
+}
+
+.post h2 a:hover {
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 28px;
+	/*text-transform: uppercase;*/
+}
+
+.post-text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
+.post-form {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
+.jumbotron {
+	background: #FFFFFF;
+	padding-top: 0px;
+}
+
+.ComentariosText {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	}
