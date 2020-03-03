@@ -4,7 +4,6 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 from django.conf.urls import url
-from django.views.static import serve 
 
 
 
@@ -21,6 +20,4 @@ urlpatterns = [
 	url(r'^post/(?P<pk>\d+)/comment/$', views.add_comment_to_post, name='add_comment_to_post'),
 	url(r'^comment/(?P<pk>\d+)/approve/$', views.comment_approve, name='comment_approve'),
 	url(r'^comment/(?P<pk>\d+)/remove/$', views.comment_remove, name='comment_remove'),
-    path(settings.STATIC_URL[1:], serve, {'document_root': settings.STATIC_ROOT })
-]
-#+ static(settings.STATIC_URL, serve, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
