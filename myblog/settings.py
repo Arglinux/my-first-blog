@@ -126,8 +126,9 @@ STATIC_URL = '/static/'
 
 #STATIC_ROOT = (os.path.join(SITE_ROOT, 'static_files/'))
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
-STATICFILES_DIRS = ('/home/Arglinux/arglinux.pythonanywhere.com/static')
-
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
 
 STATICFILES_FINDERS = [
      "django.contrib.staticfiles.finders.FileSystemFinder",
