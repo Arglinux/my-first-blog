@@ -130,5 +130,5 @@ STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",]
 
 
-#MEDIA_URL = '/home/Arglinux/arglinux.pythonanywhere.com/media/'
+MEDIA_URL = '/home/Arglinux/arglinux.pythonanywhere.com/media/'
 CKEDITOR_UPLOAD_PATH = 'uploads'
