@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'z@*jz)#@88nm8=5kpl@u91ondszz!t&1k8sopudl+9fau3*k++'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
@@ -126,9 +126,7 @@ STATIC_URL = '/static/'
 
 #STATIC_ROOT = (os.path.join(SITE_ROOT, 'static_files/'))
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
-STATICFILES_DIRS = (
-  os.path.join(SITE_ROOT, 'static/'),
-)
+STATICFILES_DIRS = ('/home/Arglinux/arglinux.pythonanywhere.com/static')
 
 
 STATICFILES_FINDERS = [
