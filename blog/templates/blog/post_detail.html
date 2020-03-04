@@ -32,7 +32,7 @@
             <p>Comentarios:</p>
         </div>
     <hr>
-    <p></p><a class="btn btn-dark btn-lg" href="{% url 'add_comment_to_post' pk=post.pk %}">Añadir un comentario</a></p>
+    <p></p><a class="btn btn-pink btn-lg" href="{% url 'add_comment_to_post' pk=post.pk %}">Añadir un comentario</a></p>
 {% for comment in post.comments.all %}
 {% if user.is_authenticated or comment.approved_comment %}
     <div class="comment">
