@@ -2,16 +2,17 @@
 {% block content %}
 {% for post in posts %}
 	<div class="post">
-		<div class="date">
-
+		<div class="date" aling="center">
+            <div align="left">
 			<!--CUENTA DE COMENTARIOS EN EL BLOG-->
 			<!--<a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.comments.count }}</a>-->
 
-			{{ post.published_date|date:'d-m-Y' }}
-			<hr>
-			<!-- MOSTRAR FECHA DE PUBLICACIÓN-->
+			Publicado el {{ post.published_date|date:"d \d\e F \d\e Y" }} <!-- MOSTRAR FECHA DE PUBLICACIÓN-->
+			</div>
 		</div>
-		<h2><a href="{% url 'post_detail' pk=post.pk %}">{{post.title }}</a></h2>
+		<hr><h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+		<br/>
 	</div>
 {% endfor %}
 {% endblock %}
+

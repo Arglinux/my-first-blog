@@ -4,7 +4,7 @@
     <div class="post">
         {% if post.published_date %}
             <div class="date">
-                {{ post.published_date|date:'d-m-Y' }}
+                {{ post.published_date|date:"d \d\e F \d\e Y" }}
                 <! -- MOSTRAR FECHA DE PUBLICACIÓN-->
             </div>
             <div align="right">
@@ -37,7 +37,7 @@
 {% if user.is_authenticated or comment.approved_comment %}
     <div class="comment">
         <div class="date">
-            {{ comment.created_date }}
+            {{ comment.created_date|date:"d \d\e F \d\e Y" }}
         {% if not comment.approved_comment %}
                 <a class="btn btn-primary btn-lg" href="{% url 'comment_remove' pk=comment.pk %}">Eliminar</a>
                 <a class="btn btn-primary btn-lg" href="{% url 'comment_approve' pk=comment.pk %}">Aprobar</a>
