@@ -39,11 +39,6 @@
 	  </li>
 	  <li class="nav-item">
 		{% if user.is_authenticated %}
-        <a class="nav-link" href="{% url 'post_new' %}">Redactar</a>
-		{% endif %}
-      </li>
-	  <li class="nav-item">
-		{% if user.is_authenticated %}
         <a class="nav-link" href="{% url 'post_draft_list' %}">Borradores</a>
 		{% endif %}
       </li>
