@@ -25,7 +25,7 @@ body {
 }
 
 .post h2 a, .post h2 a:visited {
-	color: #BLUE;
+	color: #ff0070;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 28px;
 	/*text-transform: uppercase;*/
