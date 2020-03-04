@@ -16,7 +16,10 @@ def post_detail(request, pk):
     
 def about(request):
     return render(request, 'blog/about.html', {})
-	
+
+def info(request):
+    return render(request, 'blog/info.html', {})
+
 def post_new(request):
     if request.method == "POST":
         form = PostForm(request.POST)
