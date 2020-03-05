@@ -7,7 +7,7 @@ body {
 	background: #FFF;
 }
 
-/* IMÁGENES DE PUBLICACIONES ----------------------------------------------------------- */
+/* IMÁGENES DE PUBLICACIONES ------------------------------------------------------------ */
 
 .post-text img {
 	display:block;
@@ -63,7 +63,7 @@ body {
 
 /* TAMAÑO DE LOS TÍTULOS ----------------------------------------------------------- */
 
-.about-title {
+.titles {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 28px;
 	font-weight: bold;
