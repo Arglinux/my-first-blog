@@ -1,13 +1,11 @@
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from . import views
 from django.conf.urls import url
 
 
-
-#test
 urlpatterns = [
 	path('', views.post_list, name='post_list'),
 	path('about', views.about, name='about'),
