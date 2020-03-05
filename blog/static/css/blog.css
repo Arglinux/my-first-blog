@@ -79,6 +79,11 @@ body {
 	font-size: 15px;
 }
 
+.texto-blog {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
 /* BARRA DE NAVEGACIÓN -------------------------------------------------------------- */
 
 .navbar {
