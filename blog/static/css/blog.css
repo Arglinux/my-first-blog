@@ -63,7 +63,7 @@ body {
 
 /* TAMAÑO DE LOS TÍTULOS ----------------------------------------------------------- */
 
-.titles {
+.titles, h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 28px;
 	font-weight: bold;
