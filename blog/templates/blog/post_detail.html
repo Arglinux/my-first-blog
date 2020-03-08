@@ -43,7 +43,9 @@
             {% endif %}
         </div>
         <strong>{{ comment.author }}</strong>
-        <p class="comment-text">{{ comment.text|linebreaks }}</p>
+        <div class="jumbotron">
+        <p>{{ comment.text|linebreaks }}</p>
+        </div>
         {% endif %}
 {% empty %}
     </div></div></div>
