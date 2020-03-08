@@ -30,6 +30,12 @@ body {
 	font-size: 15px;
 }
 
+.post-text a, .post-text a:visited {
+	color: #007bff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+
 /* TAMAÑO DE LOS TÍTULOS ----------------------------------------------------------- */
 
 .titles {
@@ -39,7 +45,7 @@ body {
 }
 
 .titles-list a, .titles-list a:visited {
-	color: #BLUE;
+	color: #007bff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 28px;
 	/*text-transform: uppercase;*/
