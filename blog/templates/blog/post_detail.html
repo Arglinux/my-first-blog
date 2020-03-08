@@ -44,9 +44,9 @@
         </div>
         <strong>{{ comment.author }}</strong>
         <p>{{ comment.text|linebreaks }}</p>
-    </div></div></div>
-    {% endif %}
+        {% endif %}
 {% empty %}
+    </div></div></div>
     <!--<p>Todavía no hay comentarios. Comenta algo...</p></div></div>-->
 {% endfor %}
 {% endblock %}
