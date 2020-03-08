@@ -26,7 +26,8 @@
     </div>
 
     <div class="container p-4">
-        <div class="ComentariosText">
+        <div class="jumbotron">
+            <div class="ComentariosText">
             <p>Comentarios:</p>
         </div>
     <hr>
@@ -43,7 +44,7 @@
         </div>
         <strong>{{ comment.author }}</strong>
         <p>{{ comment.text|linebreaks }}</p>
-    </div></div>
+    </div></div></div>
     {% endif %}
 {% empty %}
     <!--<p>Todavía no hay comentarios. Comenta algo...</p></div></div>-->
