@@ -140,6 +140,10 @@ h6 {
 	font-size: 25px;
 	}
 
+.comment-text {
+    padding-left: 10px;
+}
+
 /* JUMBOTRON --------------------------------------------------------------- */
 
 .jumbotron {
