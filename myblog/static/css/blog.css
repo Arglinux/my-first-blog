@@ -7,6 +7,13 @@ body {
 	background: #FFF;
 }
 
+/* IMAGEN DE LA CABECERA ----------------------------------------------------- */
+
+.imgRedonda {
+
+    border-radius:150px;
+}
+
 /* IMÁGENES DE PUBLICACIONES ------------------------------------------------------------ */
 
 .post-text img {
@@ -18,76 +25,74 @@ body {
 
 /* TEXTO DE LAS PUBLICACIONES ----------------------------------------------------------- */
 
-.post {
-	margin-bottom: 20px;
+.post-text {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 28px;
+	font-size: 15px;
 }
 
-.post h2 a, .post h2 a:visited {
+/* TAMAÑO DE LOS TÍTULOS ----------------------------------------------------------- */
+
+.titles {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.titles-list a, .titles-list a:visited {
 	color: #BLUE;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 28px;
 	/*text-transform: uppercase;*/
 }
 
-.post h2 {
+.titles-list {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 28px;
 }
 
-.post-detail h2 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 28px;
-	font-weight: bold;
-}
-
-.post h2 a:hover {
+.titles-list a:hover {
 	color: #000000;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 28px;
 	/*text-transform: uppercase;*/
 }
 
-.post-text {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
-}
+/* ESTILO DE LOS H1, H2, H3, H4, H5, H6 ----------------------------------------------- */
 
-h3 {
+h1 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 21px;
+	font-size: 30px;
 	font-weight: bold;
-	}
-
-/* IMAGEN DE LA CABECERA ----------------------------------------------------- */
-
-.imgRedonda {
-
-    border-radius:150px;
 }
 
-/* TAMAÑO DE LOS TÍTULOS ----------------------------------------------------------- */
-
-.titles, h1 {
+h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 28px;
 	font-weight: bold;
 }
 
-.javier-display-4 {
+h3 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 35px;
+	font-size: 26px;
+	font-weight: bold;
 }
 
-.javier-lead {
+h4 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
+	font-size: 24px;
+	font-weight: bold;
 }
 
-.texto-blog {
+h5 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 /* BARRA DE NAVEGACIÓN -------------------------------------------------------------- */
