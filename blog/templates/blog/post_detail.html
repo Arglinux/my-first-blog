@@ -17,13 +17,13 @@
     <a class="btn btn-primary btn-lg" href="{% url 'post_edit' pk=post.pk %}">Editar</a>
     <a class="btn btn-primary btn-lg" href="{% url 'post_remove' pk=post.pk %}">Eliminar</a>
         {% endif %}
-    </div>    </div>  </div>
+    </div>    </div>
     <div class="titles">
         {{ post.title }}</div>
         <div class="post-text">
         <p>{{ post.text|safe }}</p>
         </div>
-  
+    </div>
 
     <div class="container p-4">
         <div class="jumbotron">
