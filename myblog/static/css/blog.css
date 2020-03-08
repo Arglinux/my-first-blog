@@ -39,7 +39,7 @@ body {
 .post-detail h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 28px;
-	font-weight: bolder;
+	font-weight: bold;
 }
 
 .post h2 a:hover {
@@ -53,6 +53,12 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 }
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	}
 
 /* IMAGEN DE LA CABECERA ----------------------------------------------------- */
 
