@@ -1,7 +1,7 @@
 {% extends 'blog/base.html' %}
 {% block content %}
 {% for post in posts %}
-	<div class="post">
+	<div class="post-list">
 		<div class="date" aling="center">
             <div align="left">
 			<!--CUENTA DE COMENTARIOS EN EL BLOG-->
@@ -10,7 +10,7 @@
 			Publicado el {{ post.published_date|date:"d \d\e F \d\e Y" }} <!-- MOSTRAR FECHA DE PUBLICACIÓN-->
 			</div>
 		</div>
-		<hr><h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+		<hr><div class="titles-list"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></div>
 		<br/>
 	</div>
 {% endfor %}
